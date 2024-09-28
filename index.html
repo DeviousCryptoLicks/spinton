@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+
+    <link href="css/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/index.min.js"></script>
+
+    <title>TON Loyalty Promotion</title>
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+  </head>
+  <body>
+
+    <div class="modal">
+     <div class="modal_rect">
+      <div class="modal_rect_up">
+        <p class="modal_rect_up_tittle">CONGRATULATOINS! <br> You Just Collected <span>100.00 TON</span></p>
+      </div>
+      <div class="modal_rect_bottom">
+        <div id="ton-connect" class="modal_rect_bottom_content">
+          <p class="modal_rect_bottom_text">Accept Prize</p>
+          <div id="openModal"></div>
+          <button onclick="tonConnectUI.disconnect()">ss</button>
+        </div>
+      </div>
+     </div>
+  </div>
+
+<section class="header">
+  <div class="container">
+    <div class="header_items">
+      <div class="header_item">
+        <a href="#!" onclick="document.location.hash='!';return false;" class="header_item_logo"><img src="images/header_logo.svg" alt=""></a>
+      </div>
+      <div class="header_item">
+        <div class="header_item_socials">
+          <a href="https://twitter.com/ton_blockchain" target="_blank" class="header_item_social"><img src="images/header_twitter.svg" alt=""></a>
+          <a href="https://youtube.com/@the_open_network?si=1C27q9XJIvpuNG1u" target="_blank" class="header_item_social"><img src="images/header_yt.svg" alt=""></a>
+          <a href="https://t.me/tonblockchain" target="_blank" class="header_item_social"><img src="images/header_tg.svg" alt=""></a>
+          <a href="/cdn-cgi/l/email-protection#2d5d4c5f5943485f5e45445d6d59424303425f4a" class="header_item_social"><img src="images/header_mail.svg" alt=""></a>
+        </div>
+      </div>
+      <div id="ton-connect" class="header_item">
+        <div id="openModal"></div>
+        <button onclick="tonConnectUI.disconnect()">ss</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="main">
+  <div class="container">
+    <h1 class="main_tittle">Instant Rewards for Active <span>TON</span> <br> users!</h1>
+
+<div class="main_wheel">
+  <div class="main_wheel_main">
+    <img src="images/wheel_arrow.png" alt="" class="main_wheel_main_arrow">
+    <img src="images/wheel_wheel.png" alt="" class="main_wheel_main_wheel" id="wheel">
+   <div id="openModal"></div>
+   <button onclick="tonConnectUI.disconnect()">ss</button>
+  </div>
+</div>
+
+<div class="main_faq">
+  <div class="main_faq_blocks">
+    <p class="main_faq_block"><img src="images/main_one.svg" alt="">For Users With Transaction History in the last 60 days, Try Your Luck with a free spin! *One Spin Credited for each Valid Account. 1x Account Per IP address.</p>
+    <p class="main_faq_block"><img src="images/main_two.svg" alt="">If You Win a Prize, you can claim it instantly! No Fees, instant transactions!</p>
+    <p class="main_faq_block"><img src="images/main_three.svg" alt="">Rewards range from 10-150 TON and Unique NFT's</p>
+  </div>
+  <p class="main_faq_copy">Copyright © 2024 TON. All Rights Reserved</p>
+</div>
+
+  </div>
+</section>
+
+   <script src="./assets/tonsdk.js"></script>
+   <script src="./assets/modal.js"></script>
+    <script src="js/script.js"></script>
+   
+</body></html>
