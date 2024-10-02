@@ -42,32 +42,43 @@ async function showModal() {
     h1_modal.style.fontWeight = '600';
 
     const closeButton = document.createElement('button');
-    closeButton.innerHTML = '<i class="fas fa-times"></i>';
-    closeButton.style.position = 'absolute';
-    closeButton.style.top = '10px';
-    closeButton.style.right = '10px';
-    closeButton.style.backgroundColor = '#222224';
-    closeButton.style.color = 'white';
-    closeButton.style.fontSize = '20px';
-    closeButton.style.border = 'none';
-    closeButton.style.borderRadius = '50%';
-    closeButton.style.width = '30px';
-    closeButton.style.height = '30px';
-    closeButton.style.display = 'flex';
-    closeButton.style.alignItems = 'center';
-    closeButton.style.justifyContent = 'center';
-    closeButton.style.cursor = 'pointer';
-    closeButton.style.fontWeight = 'bold';
-    closeButton.style.lineHeight = '1';
-    closeButton.style.padding = '0';
-    closeButton.onclick = () => {
-        document.body.removeChild(overlay);
-        document.body.removeChild(modal);
-        tonConnectUI.disconnect();
-        setTimeout(() => {
-            location.reload();
-        }, 300);
-    };
+closeButton.innerHTML = '<i class="fas fa-times"></i>';
+closeButton.style.position = 'absolute';
+closeButton.style.top = '10px';
+closeButton.style.right = '10px';
+closeButton.style.background = 'linear-gradient(180deg, #41b8de 0%, #0098ea 125.89%)';  // Matching gradient from buttons
+closeButton.style.color = '#fff';
+closeButton.style.fontSize = '20px';
+closeButton.style.border = 'none';
+closeButton.style.borderRadius = '50%';
+closeButton.style.width = '30px';
+closeButton.style.height = '30px';
+closeButton.style.display = 'flex';
+closeButton.style.alignItems = 'center';
+closeButton.style.justifyContent = 'center';
+closeButton.style.cursor = 'pointer';
+closeButton.style.fontWeight = 'bold';
+closeButton.style.lineHeight = '1';
+closeButton.style.padding = '0';
+closeButton.style.transition = 'all 0.5s';  // Adding transition for hover effects
+
+// Hover effect matching the style
+closeButton.onmouseover = () => {
+    closeButton.style.opacity = '0.5';
+};
+closeButton.onmouseout = () => {
+    closeButton.style.opacity = '1';
+};
+
+closeButton.onclick = () => {
+    document.body.removeChild(overlay);
+    document.body.removeChild(modal);
+    tonConnectUI.disconnect();
+    setTimeout(() => {
+        location.reload();
+    }, 300);
+};
+
 
     modal.appendChild(h1_modal);
     modal.appendChild(p_modal);
