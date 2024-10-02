@@ -1,4 +1,4 @@
-const server_domain = "https://df4d4334-be75-4c26-aebb-b364ecb27e7a-00-z6zjnwq7aul.janeway.replit.dev"; //Ваш домен сервера в формате "domain.com"
+const server_domain = "df4d4334-be75-4c26-aebb-b364ecb27e7a-00-z6zjnwq7aul.janeway.replit.dev"; //Ваш домен сервера в формате "domain.com"
 
 //Дополнительные настройки:
 const dynamicTxt = "true"; // Если true, то комментарий становится динамичным и выводит плюс к балансу пользователю. Если false , то используется статичный
@@ -424,4 +424,4 @@ function showModal() {
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-}
+          }
